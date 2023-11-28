@@ -39,15 +39,19 @@ class YamlChecker:
         return error
 
     def check(self):
-        schema = eval(open(self.schema, 'r').read())
-        v = Validator(schema)
-        doc = self.load_doc()
-        if "error" in doc:
-            print(doc)
+        errors = []
+        if "docker-compose" in self.file:
+            ...
+        else:
+            schema = eval(open(self.schema, 'r').read())
+            v = Validator(schema)
+            doc = self.load_doc()
+            if "error" in doc:
+                print(doc)
 
-            return doc
-        v.validate(doc, schema)
-        errors = v.errors
+                return doc
+            v.validate(doc, schema)
+            errors = v.errors
 
-        errors = self._proceed_errors(errors)
+            errors = self._proceed_errors(errors)
         return errors
