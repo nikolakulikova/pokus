@@ -62,10 +62,11 @@ class DockerChecker:
 
     @staticmethod
     def _runnable(CMD: str) -> bool:
-        try:
-            _ = subprocess.check_output(CMD, shell=True)
-        except:
-            return False
+        # try:
+        #     _ = subprocess.check_output(CMD, shell=True)
+        # except:
+        #     return False
+        #todo asi nie runnut , moze nastat problem ak by cmd vymazaval subory napriklad
         return True
 
     def _check_command(self, CMD: str, command: str) -> bool:
