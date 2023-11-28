@@ -1,0 +1,7 @@
+name: 'my_name'
+date:  2017-10-01
+metrics:
+percentage:
+  trend: up,
+  aaa: a
+  value: 3

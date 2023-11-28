@@ -1,0 +1,11 @@
+<?xml version="2.0"?> odfiltrovat
+<world> in path
+  <country name="Afghanistan">
+    <population>32225560</population>
+  </country>
+  <country name="Afghanistan">
+    <population>32225560</population>
+  </country>
+  <ppp>
+  </ppp>
+</world>

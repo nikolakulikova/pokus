@@ -1,0 +1,11 @@
+{
+        "type": "object",
+        "required": [
+        "fruit", "size", "color"
+        ],
+        "properties": {
+            "fruit": {"type": "string"},
+            "size": {"type": "string"},
+            "color": {"type": "string"}
+        }
+}

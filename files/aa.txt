@@ -1,0 +1,24 @@
+a = ' ["aaa",124] '
+a = a.strip() -> a = '["aaa",124]'
+check ak [ in a[0] tak check a[-1] == ] -> true inak false + a = a[1:-1] -> a = '"aaa",124,"aaa" 12, 12 "aaa"'
+a.split(",") -> [ "aaa", 124a, "", "sss, "aaa" 12, 12 "aaa", "aaa" "aaa", 12 23]
+for i in a: i = i.strip() if i.contains('"'):
+                            #string + int alebo opacne
+                            if i.count('"') == 2 and  (not i.endswith('"') or not i.startswith('"')):
+                                error missing , ?
+                                continue
+                            if i.count('"') != 2:
+                                error missing ,
+                            #spravny string
+                            if i.startswith('"') and i.endswith('"') and i.count('"') == 2:
+                                continue
+                            else:
+                                error chyba "
+                          else:
+                            for j in i:
+                                if j == " ":
+                                    error missing ,
+                                if not j.isnumeric():
+                                    error chyba "
+
+
